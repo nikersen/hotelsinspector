@@ -1,0 +1,23 @@
+.header {
+  height: 81px;
+  border-bottom: 1px solid #E6E6E6; }
+  .header .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.logo {
+  display: inline-block;
+  margin-right: 20px; }
+  .logo img {
+    vertical-align: top; }

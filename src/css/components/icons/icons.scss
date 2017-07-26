@@ -1,0 +1,15 @@
+@import '_icons-sprite-mixins';
+
+.icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.icon-stars.star-1 {width: 16px;}
+.icon-stars.star-2 {width: 42px;}
+.icon-stars.star-3 {width: 68px;}
+.icon-stars.star-4 {width: 94px;}
+.icon-stars.star-5 {width: 120px;}
+
+@include sprites($spritesheet-sprites);

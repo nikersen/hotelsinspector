@@ -1,0 +1,105 @@
+.page {
+  font-family: Proxima;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4B4B4E; }
+  .page, .page * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .page * {
+    outline-color: darkorange; }
+
+.container {
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.content {
+  margin-top: 30px;
+  padding-bottom: 40px; }
+  .content .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .content__column {
+    margin-top: 25px;
+    margin-right: 40px;
+    width: 574px;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .content__aside {
+    width: 345px;
+    background: #F9FAFC;
+    border: 1px solid #EBEBEF;
+    border-radius: 8px;
+    padding: 0 25px; }
+    .content__aside-item {
+      padding: 25px 0;
+      border-bottom: 1px solid #DCDCDE; }
+      .content__aside-item:last-child {
+        border-bottom: 0; }
+      .content__aside-item > .content__aside-subtitle {
+        margin: -4px 0 -6px; }
+    .content__aside-subtitle {
+      font-size: 21px;
+      font-weight: 600; }
+
+.lighting {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  padding: 0; }
+  .lighting__text,
+  .lighting span {
+    position: relative;
+    z-index: 1; }
+  .lighting:before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 10px;
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    background: transparent;
+    z-index: 0; }
+  .lighting--min:before {
+    left: 5px; }
+  .lighting--green:before {
+    background: #DFF4DC; }
+  .lighting--red:before {
+    background: #F9E1DE; }
+  .lighting--yellow:before {
+    background: #FCEBC0; }
+  .lighting-active {
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    padding: 0; }
+    .lighting-active:before {
+      content: '';
+      position: absolute;
+      top: 40%;
+      left: 5px;
+      width: 100%;
+      height: 70%;
+      border-radius: 8px;
+      background: transparent;
+      z-index: 0;
+      opacity: 0;
+      background: #FCEBC0; }
+    .lighting-active.active:before {
+      opacity: 1; }
+
+.active .lighting-active:before {
+  opacity: 1; }

@@ -1,0 +1,70 @@
+.breadcrumbs {
+  padding-top: 13px;
+  background: #F7F8FA;
+  border-bottom: 1px solid #EBEBEF;
+  font-size: 0;
+  text-align: center; }
+  .breadcrumbs__link {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 260px;
+    height: 34px;
+    line-height: 34px;
+    text-decoration: none;
+    border: 1px solid #EBEBEF;
+    border-right: none;
+    margin-bottom: 13px;
+    color: #5DBDE8;
+    background: #fff;
+    padding: 0 18px 0 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-right: 37px; }
+    .breadcrumbs__link:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 4px;
+      right: -12px;
+      border-top: 1px solid #EBEBEF;
+      border-right: 1px solid #EBEBEF;
+      background: #fff;
+      width: 23px;
+      height: 23px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transform-origin: center;
+          -ms-transform-origin: center;
+              transform-origin: center; }
+    .breadcrumbs__link:hover, .breadcrumbs__link.hover {
+      color: #00CFFF; }
+    .breadcrumbs__link:active, .breadcrumbs__link.active {
+      color: #fff;
+      border-color: #00CFFF;
+      background: #00CFFF; }
+      .breadcrumbs__link:active:after, .breadcrumbs__link.active:after {
+        border-color: #00CFFF;
+        background: #00CFFF; }
+    .breadcrumbs__link--this {
+      color: #8D8E8F;
+      border-right: 1px solid #EBEBEF;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      margin-right: 0;
+      cursor: default; }
+      .breadcrumbs__link--this:after {
+        display: none; }
+      .breadcrumbs__link--this:hover, .breadcrumbs__link--this.hover, .breadcrumbs__link--this:active, .breadcrumbs__link--this.active {
+        color: #8D8E8F;
+        border-color: #EBEBEF;
+        background: #fff; }
+  .breadcrumbs__text {
+    display: block;
+    max-width: 1%;
+    min-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }

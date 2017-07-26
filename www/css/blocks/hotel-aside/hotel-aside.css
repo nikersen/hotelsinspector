@@ -1,0 +1,98 @@
+.hotel-aside__photo {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: -1px -26px 0;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.hotel-aside__head {
+  padding-top: 15px;
+  padding-bottom: 17px; }
+
+.hotel-aside__name {
+  margin-top: 7px;
+  margin-bottom: 16px; }
+
+.hotel-aside__country {
+  color: #919293;
+  margin-bottom: 13px; }
+
+.hotel-aside__rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 15px;
+  padding-bottom: 18px; }
+  .hotel-aside__rating-item {
+    width: auto;
+    min-width: 144px;
+    margin: 13px 0;
+    padding-right: 10px; }
+  .hotel-aside__rating-name {
+    margin-top: 8px;
+    font-size: 15px; }
+
+.hotel-aside__val {
+  position: relative;
+  font-weight: 800;
+  font-size: 31px;
+  line-height: 1;
+  white-space: nowrap; }
+  .hotel-aside__val .icon {
+    top: -3px;
+    vertical-align: middle; }
+  .hotel-aside__val--over {
+    top: 2px;
+    color: #269ED3;
+    font-size: 40px;
+    vertical-align: bottom; }
+
+.hotel-aside__price {
+  padding-top: 20px;
+  padding-bottom: 21px; }
+  .hotel-aside__price-text {
+    margin-top: 15px;
+    margin-bottom: 17px;
+    line-height: 20px;
+    font-size: 14px; }
+
+.hotel-aside__peoples {
+  padding-top: 21px; }
+  .hotel-aside__peoples-counter {
+    margin-bottom: 19px; }
+    .hotel-aside__peoples-counter .hotel-aside__val {
+      margin-right: 5px; }
+  .hotel-aside__peoples-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    height: 50px;
+    overflow: hidden; }
+  .hotel-aside__peoples-pic {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .hotel-aside__peoples-pic + .hotel-aside__peoples-pic {
+      margin-left: 5px; }

@@ -1,0 +1,56 @@
+.evaluation {
+  margin: 0 -18px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .evaluation__item {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 50%;
+    padding: 5px 18px; }
+  .evaluation__name {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 9px;
+    padding: 0 7px; }
+  .evaluation__rate {
+    position: relative;
+    height: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0 20px; }
+    .evaluation__rate-name {
+      position: relative;
+      z-index: 2;
+      font-size: 14px;
+      line-height: 30px;
+      color: #fff; }
+    .evaluation__rate-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: 1; }
+    .evaluation__rate.high {
+      background: #B5EAB0; }
+      .evaluation__rate.high .evaluation__rate-line {
+        background: #3AAA35; }
+    .evaluation__rate.mid {
+      background: #CFEA86; }
+      .evaluation__rate.mid .evaluation__rate-line {
+        background: #89BF21; }
+    .evaluation__rate.low {
+      background: #F9AC9D; }
+      .evaluation__rate.low .evaluation__rate-line {
+        background: #E94E1B; }
+
+.evaluation--post {
+  margin-top: -10px; }

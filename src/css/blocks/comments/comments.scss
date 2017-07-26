@@ -1,0 +1,17 @@
+@import '../../vendor/_variables';
+
+.comments {
+	background: #F9FAFC;
+	padding: 20px;
+
+	&.show, &--show {display: block;}
+
+	&__item {margin-bottom: 32px;}
+
+	&__message {
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.post-head {margin-bottom: 13px;}
+}

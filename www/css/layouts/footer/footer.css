@@ -1,0 +1,86 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #F7F8FA;
+  z-index: 99;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform .3s ease-in;
+          transition: transform .3s ease-in; }
+  .footer.is-visible {
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+            transition: transform .3s ease-out; }
+    .footer.is-visible .footer__open {
+      top: -58px;
+      -webkit-transform: rotateX(180deg);
+              transform: rotateX(180deg); }
+  .footer:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid #5DBDE8; }
+  .footer .container {
+    position: relative; }
+  .footer__line {
+    height: 12px;
+    background: #34A8E0; }
+  .footer__open {
+    position: absolute;
+    top: -55px;
+    right: 142px;
+    border: none;
+    width: 101px;
+    height: 43px;
+    cursor: pointer;
+    background: url(../images/footer__arrow.png) no-repeat center center;
+    -webkit-transition: top .3s,-webkit-transform .5s ease;
+            transition: top .3s,transform .5s ease;
+    -webkit-transform-origin: center bottom;
+        -ms-transform-origin: center bottom;
+            transform-origin: center bottom;
+    outline: none; }
+  .footer__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 25px;
+    min-height: 81px;
+    border-bottom: 1px solid #DCDCDE; }
+    .footer__row:last-child {
+      border-bottom: none; }
+  .footer__text--label {
+    width: 379px;
+    padding-right: 25px; }
+  .footer__links {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
+    .footer__links--full {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 auto;
+          -ms-flex: 1 0 auto;
+              flex: 1 0 auto; }
+  .footer__link {
+    text-decoration: none;
+    color: #269ED3;
+    margin-right: 47px;
+    line-height: 2;
+    white-space: nowrap; }
+    .footer__link--icon {
+      margin-right: 20px; }
+    .footer__link:last-child {
+      margin-right: 0; }

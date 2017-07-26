@@ -1,0 +1,72 @@
+.sorting {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px;
+  -ms-touch-action: none;
+      touch-action: none; }
+  .sorting__item {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 44px;
+    -webkit-transition: color .2s;
+            transition: color .2s;
+    -ms-touch-action: none;
+        touch-action: none; }
+    .sorting__item:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      display: block;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      border: 1px solid #DCDCE0;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-transition: width .1s ease, height .1s ease;
+              transition: width .1s ease, height .1s ease;
+      -ms-touch-action: none;
+          touch-action: none; }
+    .sorting__item + .sorting__item:after {
+      border-left: 0; }
+    .sorting__item:last-child:after {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px; }
+    .sorting__item:first-child:after {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px; }
+    .sorting__item:hover, .sorting__item.hover {
+      color: #00CFFF; }
+    .sorting__item.active {
+      z-index: 3;
+      color: #4B4B4E; }
+      .sorting__item.active:after {
+        border-radius: 8px;
+        border: 2px solid #DCDCE0;
+        height: 136%;
+        width: 106%; }
+  .sorting__text {
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    -ms-touch-action: none;
+        touch-action: none; }

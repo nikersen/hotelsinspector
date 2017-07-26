@@ -1,0 +1,33 @@
+@import '../../vendor/_variables';
+
+.interview {
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	&__body {
+		background: #FFF5D9;
+		border-radius: 8px;
+		padding: 10px;
+	}
+
+	&__item {
+		padding: 10px;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		color: inherit;
+		font-size: 15px;
+		border-radius: 8px;
+
+		&:hover, &.hover,
+		&:active, &.active {
+			color: $baseCyan;
+		}
+
+		.icon {margin-right: 20px;}
+	}
+}

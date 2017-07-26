@@ -1,0 +1,54 @@
+.post-panel {
+  background: #F9FAFC;
+  border: 1px solid #E6E6EA;
+  border-radius: 8px; }
+  .post-panel__actions {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
+    margin: -1px;
+    height: 58px;
+    border: 1px solid #E6E6EA;
+    border-radius: 8px;
+    background: #fff; }
+    .post-panel__actions-item {
+      font-size: 16px;
+      display: inline-block;
+      color: inherit;
+      margin-right: 55px; }
+      .post-panel__actions-item .icon {
+        margin-right: 5px; }
+      .post-panel__actions-item--share {
+        margin-right: 0;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        margin-left: auto; }
+      .post-panel__actions-item.active .icon-cloud-min-blue {
+        background-position: -135px -350px; }
+      .post-panel__actions-item.active .icon-heart-blue {
+        background-position: -27px -350px; }
+    .post-panel__actions-num {
+      color: #B4B4B6;
+      margin-left: 3px; }
+  .post-panel__hidden {
+    display: none; }
+    .post-panel__hidden.show, .post-panel__hidden--visible {
+      display: block; }
+    .post-panel__hidden .form-message--panel:first-child {
+      margin-top: -5px;
+      padding-top: 5px;
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+  .post-panel .comments {
+    border-radius: 8px; }

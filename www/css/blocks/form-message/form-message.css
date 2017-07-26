@@ -1,0 +1,136 @@
+.form-message {
+  border: 1px solid #E6E6EA;
+  border-radius: 8px; }
+  .form-message__row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px; }
+  .form-message__userpic {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px; }
+    .form-message__userpic img {
+      width: 100%;
+      height: auto; }
+  .form-message__field {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    margin-right: 20px;
+    border: 1px solid #E6E6EA;
+    border-radius: 8px;
+    padding: 10px 15px 10px 0; }
+  .form-message__textarea {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    border: none;
+    background: transparent;
+    padding: 6px 15px 4px;
+    resize: none;
+    height: 28px;
+    line-height: 18px;
+    outline: none;
+    width: 100%;
+    max-width: 100%; }
+    .form-message__textarea.active {
+      height: 120px; }
+    .form-message__textarea::-webkit-input-placeholder {
+      color: #B4B4B6; }
+    .form-message__textarea::-moz-placeholder {
+      color: #B4B4B6; }
+    .form-message__textarea:-ms-input-placeholder {
+      color: #B4B4B6; }
+    .form-message__textarea::placeholder {
+      color: #B4B4B6; }
+  .form-message__add {
+    padding-top: 3px; }
+  .form-message__btn {
+    border: 2px solid #5DBDE8;
+    border-radius: 8px;
+    height: 50px;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 0 14px; }
+    .form-message__btn:hover, .form-message__btn.hover {
+      border-color: #00CFFF;
+      color: #00CFFF; }
+    .form-message__btn:active, .form-message__btn.active {
+      border-color: #00CFFF;
+      background: #00CFFF;
+      color: #fff; }
+  .form-message__upload {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-top: 1px solid #E6E6EA;
+    padding: 10px; }
+    .form-message__upload-item {
+      display: inline-block;
+      max-width: 100%;
+      width: auto;
+      position: relative;
+      margin: 10px; }
+      .form-message__upload-item img {
+        max-width: 100%;
+        height: auto;
+        max-height: 500px; }
+    .form-message__upload-item-head {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 10px;
+      position: relative;
+      border: 1px solid #E6E6EA;
+      border-bottom: none;
+      height: 50px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background: #F9FAFC; }
+    .form-message__upload-clear {
+      cursor: pointer;
+      border: none;
+      background: transparent; }
+
+.form-message--post-add {
+  border: none;
+  margin: 5px -20px -15px; }
+
+.form-message--panel {
+  margin: -1px;
+  background: #fff; }

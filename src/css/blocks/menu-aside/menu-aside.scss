@@ -1,0 +1,43 @@
+@import '../../vendor/_variables';
+
+.menu-aside {
+
+	&__link {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 44px;
+		text-decoration: none;
+		color: inherit;
+		font-weight: 500;
+	}
+
+	&__icon {
+		width: 26px;
+		margin-right: 23px;
+		text-align: center;
+
+		.icon {position: relative;}
+		.icon-camera-blue {top: -2px;}
+		.icon-bookmark-blue,
+		.icon-eye-blue,
+		.icon-flag-blue {top: -1px;}
+		.icon-crown-blue {top: -5px;}
+	}
+
+	&__text {}
+
+	&__num {
+		color: #B4B4B6;
+	}
+}
+
+.content__aside-item--menu-item {
+	padding-top: 9px;
+	padding-bottom: 6px;
+}
+
+.content__aside-item--menu {
+	padding-top: 19px;
+	padding-bottom: 18px;
+}

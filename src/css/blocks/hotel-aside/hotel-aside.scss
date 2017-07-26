@@ -1,0 +1,112 @@
+@import '../../vendor/_variables';
+
+.hotel-aside {
+
+	&__photo {
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		margin: -1px -26px 0;
+		height: 200px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	&__head {
+		padding-top: 15px;
+		padding-bottom: 17px;
+	}
+
+	&__name {
+		margin-top: 7px;
+		margin-bottom: 16px;
+	}
+
+	&__country {
+		color: #919293;
+		margin-bottom: 13px;
+	}
+
+	// rating
+	&__rating {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		padding-top: 15px;
+		padding-bottom: 18px;
+
+		&-item {
+			width: auto;
+			min-width: 144px;
+			// min-width: 144px;
+			margin: 13px 0;
+			padding-right: 10px;
+		}
+
+		&-name {
+			margin-top: 8px;
+			font-size: 15px;
+		}
+	}
+
+	&__val {
+		position: relative;
+		font-weight: 800;
+		font-size: 31px;
+		line-height: 1;
+		white-space: nowrap;
+
+		.icon {top: -3px; vertical-align: middle;}
+
+		&--over {
+			top: 2px;
+			color: $deepBlue;
+			font-size: 40px;
+			vertical-align: bottom;
+		}
+	}
+
+	// price
+	&__price {
+		padding-top: 20px;
+		padding-bottom: 21px;
+
+		&-text {
+			margin-top: 15px;
+			margin-bottom: 17px;
+			line-height: 20px;
+			font-size: 14px;
+		}
+	}
+
+	// peoples
+	&__peoples {
+		padding-top: 21px;
+
+		&-counter {
+			margin-bottom: 19px;
+			
+			.hotel-aside__val {margin-right: 5px;}
+		}
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			height: 50px;
+			overflow: hidden;
+		}
+
+		&-pic {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			border-radius: 8px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			& + & {margin-left: 5px;}
+		}
+	}
+}

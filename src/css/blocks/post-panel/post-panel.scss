@@ -1,0 +1,64 @@
+@import '../../vendor/_variables';
+
+.post-panel {
+	background: #F9FAFC;
+	border: 1px solid #E6E6EA;
+	border-radius: 8px;
+
+	&__actions {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		padding: 10px 20px;
+		margin: -1px;
+		height: 58px;
+		border: 1px solid #E6E6EA;
+		border-radius: 8px;
+		background: #fff;
+
+		&-item {
+			
+			font-size: 16px;
+			display: inline-block;
+			color: inherit;
+			margin-right: 55px;
+			
+			.icon {margin-right: 5px;}
+
+			&--share {
+				margin-right: 0;
+				flex: 0 0 auto;
+				margin-left: auto;
+			}
+
+			&.active {
+				.icon-cloud-min-blue {@include sprite-position($icon-cloud-min-cyan);}
+				.icon-heart-blue {@include sprite-position($icon-heart-cyan);}
+			}
+		}
+
+		&-num {color: #B4B4B6; margin-left: 3px;}
+
+	}
+
+	&__hidden {
+		display: none;
+
+		&.show ,&--visible {display: block;}
+
+
+
+		.form-message--panel:first-child {
+			margin-top: -5px;
+			padding-top: 5px;
+			border-top: 0;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+	}
+
+	.comments {
+		border-radius: 8px;
+	}
+}

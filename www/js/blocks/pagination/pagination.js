@@ -1,0 +1,5 @@
+$('.pagination__pages-item:not(.pagination__pages-item--arrow)').click(function(){
+	$('.pagination__pages-item').removeClass('active');
+	$(this).addClass('active');
+})
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJibG9ja3MvcGFnaW5hdGlvbi9wYWdpbmF0aW9uLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIiQoJy5wYWdpbmF0aW9uX19wYWdlcy1pdGVtOm5vdCgucGFnaW5hdGlvbl9fcGFnZXMtaXRlbS0tYXJyb3cpJykuY2xpY2soZnVuY3Rpb24oKXtcclxuXHQkKCcucGFnaW5hdGlvbl9fcGFnZXMtaXRlbScpLnJlbW92ZUNsYXNzKCdhY3RpdmUnKTtcclxuXHQkKHRoaXMpLmFkZENsYXNzKCdhY3RpdmUnKTtcclxufSkiXSwiZmlsZSI6ImJsb2Nrcy9wYWdpbmF0aW9uL3BhZ2luYXRpb24uanMifQ==

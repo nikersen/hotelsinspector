@@ -1,0 +1,12 @@
+.comments {
+  background: #F9FAFC;
+  padding: 20px; }
+  .comments.show, .comments--show {
+    display: block; }
+  .comments__item {
+    margin-bottom: 32px; }
+  .comments__message {
+    font-size: 15px;
+    line-height: 25px; }
+  .comments .post-head {
+    margin-bottom: 13px; }

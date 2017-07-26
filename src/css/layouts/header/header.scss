@@ -1,0 +1,18 @@
+.header {
+	height: 81px;
+	border-bottom: 1px solid #E6E6E6;
+
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.logo {
+	display: inline-block;
+	margin-right: 20px;
+
+	img {vertical-align: top;}
+}

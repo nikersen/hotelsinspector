@@ -1,0 +1,80 @@
+@import '../../vendor/_variables';
+
+.breadcrumbs {
+	padding-top: 13px;
+	background: #F7F8FA;
+	border-bottom: 1px solid #EBEBEF;
+
+	font-size: 0;
+	text-align: center;
+
+	&__link {
+		position: relative;
+		font-size: 14px;
+		display: inline-block;
+		vertical-align: top;
+		max-width: 260px;
+		height: 34px;
+		line-height: 34px;
+		text-decoration: none;
+		border: 1px solid #EBEBEF;
+		border-right: none;
+		margin-bottom: 13px;
+		color: $baseBlue;
+		background: #fff;
+		padding: 0 18px 0 15px;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+
+		margin-right: 37px;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 4px;
+			right: -12px;
+			border-top: 1px solid #EBEBEF;
+			border-right: 1px solid #EBEBEF;
+			background: #fff;
+			width: 23px;
+			height: 23px;
+			transform: rotate(45deg);
+			transform-origin: center;
+		}
+
+		&:hover, &.hover {
+			color: $baseCyan;
+		}
+
+		&:active, &.active {
+			color: #fff;
+			border-color: $baseCyan;
+			background: $baseCyan;
+
+			&:after {border-color: $baseCyan; background: $baseCyan;}
+		}
+
+
+		&--this {
+			color: #8D8E8F;
+			border-right: 1px solid #EBEBEF;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+			margin-right: 0;
+			cursor: default;
+
+			&:after {display: none;}
+			&:hover, &.hover, &:active, &.active {color: #8D8E8F; border-color: #EBEBEF; background: #fff;}
+		}
+	}
+
+	&__text {
+		display: block;
+		max-width: 1%;
+		min-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}

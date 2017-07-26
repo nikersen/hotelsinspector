@@ -1,0 +1,28 @@
+.interview__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px; }
+
+.interview__body {
+  background: #FFF5D9;
+  border-radius: 8px;
+  padding: 10px; }
+
+.interview__item {
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit;
+  font-size: 15px;
+  border-radius: 8px; }
+  .interview__item:hover, .interview__item.hover, .interview__item:active, .interview__item.active {
+    color: #00CFFF; }
+  .interview__item .icon {
+    margin-right: 20px; }

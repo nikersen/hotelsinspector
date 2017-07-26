@@ -1,0 +1,40 @@
+.menu-aside__link {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500; }
+
+.menu-aside__icon {
+  width: 26px;
+  margin-right: 23px;
+  text-align: center; }
+  .menu-aside__icon .icon {
+    position: relative; }
+  .menu-aside__icon .icon-camera-blue {
+    top: -2px; }
+  .menu-aside__icon .icon-bookmark-blue,
+  .menu-aside__icon .icon-eye-blue,
+  .menu-aside__icon .icon-flag-blue {
+    top: -1px; }
+  .menu-aside__icon .icon-crown-blue {
+    top: -5px; }
+
+.menu-aside__num {
+  color: #B4B4B6; }
+
+.content__aside-item--menu-item {
+  padding-top: 9px;
+  padding-bottom: 6px; }
+
+.content__aside-item--menu {
+  padding-top: 19px;
+  padding-bottom: 18px; }
