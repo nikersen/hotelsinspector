@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>HotelsInspector</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="container">
+				<a href="all.html" class="logo"><img src="images/logo.png" alt=""></a>
+		
+				<div class="search">
+					<div class="search__field">
+						<input type="text" class="search__input" placeholder="Поиск отеля и пользователей">
+						<button class="search__submit"><i class="icon icon-search-gray"></i></button>
+					</div>
+				</div>
+		
+				<div class="user">
+					<div class="user__panel">
+						<span class="user__item  user__messages">
+							<button class="user__btn"><i class="icon icon-cloud-gray"></i></button>
+						</span>
+						<span class="user__item  user__notification">
+							<button class="user__btn"><i class="icon icon-bell-gray"></i></button>
+						</span>
+						<span class="user__item"><a href="#!" class="user__pic"><img src="images/userpic.jpg" alt=""></a></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav class="menu">
+			<div class="container">
+				<ul class="menu__items">
+					<li><a href="#!" class="menu__link">Лента</a></li>
+					<li><a href="#!" class="menu__link  active">Отели</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main class="content">
+			<div class="container">
+				<aside class="content__aside  user-aside">
+					<div class="content__aside-item  user-aside__info">
+						<div class="user-aside__photo"><img src="images/user_anon_pic.png" alt=""></div>
+						<div class="user-aside__nickname">Пользователь#1</div>
+						<div class="user-aside__name">Анна Бондаренко</div>
+						<div class="user-aside__status  online"><div class="lighting  lighting--min  lighting--green"><span class="lighting__text">В сети</span></div></div>
+					</div>
+					<div class="content__aside-item  content__aside-item--menu">
+						<nav class="menu-aside">
+							<a href="#!" class="menu-aside__link  active">
+								<span class="menu-aside__icon"><i class="icon icon-list-blue"></i></span>
+								<span class="menu-aside__text"><div class="lighting-active"><span class="lighting__text">Лента <span class="menu-aside__num">2</span></span></div></span>
+							</a>
+							<a href="#!" class="menu-aside__link  disabled">
+								<span class="menu-aside__icon"><i class="icon icon-building-blue"></i></span>
+								<span class="menu-aside__text">Отели <span class="menu-aside__num">0</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-bookmark2-blue"></i></span>
+								<span class="menu-aside__text">Подписки <span class="menu-aside__num">3</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-user-blue"></i></span>
+								<span class="menu-aside__text">Подписчики <span class="menu-aside__num">8</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link  disabled">
+								<span class="menu-aside__icon"><i class="icon icon-camera-blue"></i></span>
+								<span class="menu-aside__text">Фотографии <span class="menu-aside__num">0</span></span>
+							</a>
+						</nav>
+					</div>
+					<div class="content__aside-item  content__aside-item--menu-item">
+						<nav>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-user-subscribe-blue"></i></span>
+								<span class="menu-aside__text">Подписаться</span>
+							</a>
+						</nav>
+					</div>
+					<div class="content__aside-item  user-aside__history">
+						<table class="user-aside__history-table">
+							<tr>
+								<td>Откуда</td>
+								<td><div class="user-aside__history-place">Москва</div></td>
+							</tr>
+							<tr>
+								<td>Был(а)</td>
+								<td>
+									<div class="user-aside__history-place">Alva Donna Exclusive Hotel & Spa 5*  <span>Турция</span></div>
+									<div class="user-aside__history-place">Alva Donna Exclusive Hotel & Spa 5*  <span>Турция</span></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="content__aside-item">
+						<div class="content__aside-subtitle">О себе</div>
+					</div>
+					<div class="content__aside-item">
+						<div class="content__aside-text">С детства меня интригуют, завораживают, притягивают новые места, вызывая страсть к путешествиям не только за границы нашей Родины, но и в пределах страны, где интересного ни чуть не меньше. Но где бы я не находилась, мне всегда интересно посмотреть не только на достопримечательности, но и на жизнь, традиции людей здесь, в этой точке планеты, общаясь с ними, наблюдая за ними со стороны. </div>
+					</div>
+				</aside>
+				<div class="content__column">
+					<div class="title">
+						<h1>Посты пользователя</h1>
+					</div>
+					<div class="posts">
+						<div class="filter">
+							<div class="filter__label">Смотреть:</div>
+							<div class="filter__items">
+								<a href="#" class="filter__item  active">всю ленту</a>
+								<a href="#" class="filter__item">комментарии</a>
+								<a href="#" class="filter__item">оценки</a>
+								<span class="filter__item  disabled">фотографии</span>
+							</div>
+						</div>
+
+						<div class="sorting">
+							<a href="#!" class="sorting__item  active"><span class="sorting__text">Новые</span></a>
+							<a href="#!" class="sorting__item"><span class="sorting__text">Популярные</span></a>
+						</div>
+
+						<div class="post">
+							<div class="post-head">
+								<a href="#!" class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></a>
+								<div class="post-head__userinfo">
+									<a href="#!" class="post-head__username">Пользователь#2</a>
+									<div class="post-head__message">про <a href="#!">Alva Donna Exclusive Hotel & Spa 5*</a> (Турция, Белек)</div>
+									<ul class="post-head__labels">
+										<li class="post-head__labels-item  post-head__labels-item--time"><i class="icon icon-clock-gray"></i> 8 часов 18 минут</li>
+										<li class="post-head__labels-item"><span class="lighting  lighting--min  lighting--yellow"><span>Опубликовано из отеля</span></span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="post__body">
+								<div class="post__text">Для проживания с детьми нам было идеально, правда напротив нас после вечерней анимации, в баре до 12 ночи обычно было караоке и тд. Территория отеля большая красивая! Старшая дочка днём ходила в мини клуб, на аквагримм, каждый день ходила разрисованная)))</div>
+							</div>
+
+							<div class="post-panel">
+								<!-- actions -->
+								<div class="post-panel__actions">
+									<a href="#!" class="post-panel__actions-item"><i class="icon icon-heart-blue"></i> Like it  <span class="post-panel__actions-num">126</span></a>
+									<a href="#!" class="post-panel__actions-item  js-show-hidden-panel"><i class="icon icon-cloud-min-blue"></i> <div class="lighting-active"><span class="lighting__text">Комментировать <span class="post-panel__actions-num">2</span></span></div></a>
+									<a href="#!" class="post-panel__actions-item  post-panel__actions-item--share  js-share"><i class="icon icon-share-blue"></i></a>
+								</div>
+
+								<div class="post-panel__hidden  js-hidden-panel">
+									<!-- comments -->
+									<div class="comments">
+										<!-- comment -->
+										<div class="comments__item">
+											<div class="post-head">
+												<a href="#!" class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></a>
+												<div class="post-head__userinfo">
+													<a href="#!" class="post-head__username">Пользователь#1</a>
+													<ul class="post-head__labels">
+														<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:32</li>
+													</ul>
+												</div>
+											</div>
+											<div class="comments__message">Аноним#4, можно ли курить на территории отеля?</div>
+										</div>
+										<div class="comments__item">
+											<div class="post-head">
+												<a href="#!" class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></a>
+												<div class="post-head__userinfo">
+													<a href="#!" class="post-head__username">Пользователь#2</a>
+													<ul class="post-head__labels">
+														<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:32</li>
+													</ul>
+												</div>
+											</div>
+											<div class="comments__message">Да, вполне.</div>
+										</div>
+									</div>
+									<!-- form -->
+									<div class="form-message  form-message--panel">
+										<div class="form-message__row">
+											<div class="form-message__userpic"><img src="images/user_anon_pic.png" alt=""></div>
+											<div class="form-message__field">
+												<textarea class="form-message__textarea" placeholder="Расскажите про отель"></textarea>
+												<a href="#!" class="form-message__add"><i class="icon icon-camera-lightblue"></i></a>
+											</div>
+											<button class="form-message__btn">Добавить</button>
+										</div>
+										<div class="form-message__upload">
+											<div class="form-message__upload-item">
+												<div class="form-message__upload-item-head"><button class="form-message__upload-clear"><i class="icon icon-close-blue"></i></button></div>
+												<img src="images/hotel_photo_2.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="share">
+									<div class="share__row">
+										<a href="#!" class="share__item"><i class="icon icon-vk-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-fb-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-ok-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-tw-blue"></i></a>
+										<a href="#!" class="share__item  share__item--close  js-close-share"><i class="icon icon-close-blue"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="post">
+							<div class="post-head">
+								<a href="#!" class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></a>
+								<div class="post-head__userinfo">
+									<a href="#!" class="post-head__username">Пользователь#2</a>
+									<div class="post-head__message">про <a href="#!">Alva Donna Exclusive Hotel & Spa 5*</a> (Турция, Белек)</div>
+									<ul class="post-head__labels">
+										<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:33</li>
+									</ul>
+								</div>
+							</div>
+							<div class="post__body">
+								<div class="evaluation  evaluation--post">
+									<div class="evaluation__item">
+										<div class="evaluation__name">Сервис</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Размещение</div>
+										<div class="evaluation__rate  low">
+											<div class="evaluation__rate-name">Плохо, 1.0</div>
+											<div class="evaluation__rate-line"  style="width: 20%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Питание</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Работа ресепшен</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Вежливый персонал</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Анимация</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Рестораны и бары</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Благоустройство территории</div>
+										<div class="evaluation__rate  high">
+											<div class="evaluation__rate-name">Хорошо, 4.0</div>
+											<div class="evaluation__rate-line"  style="width: 80%;"></div>
+										</div>
+									</div>
+									<div class="evaluation__item">
+										<div class="evaluation__name">Безопасность в отеле</div>
+										<div class="evaluation__rate  mid">
+											<div class="evaluation__rate-name">Средне, 3</div>
+											<div class="evaluation__rate-line"  style="width: 50%;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="post-panel">
+								<!-- actions -->
+								<div class="post-panel__actions">
+									<a href="#!" class="post-panel__actions-item"><i class="icon icon-heart-blue"></i> Like it  <span class="post-panel__actions-num">126</span></a>
+									<a href="#!" class="post-panel__actions-item  js-show-hidden-panel"><i class="icon icon-cloud-min-blue"></i> <div class="lighting-active"><span class="lighting__text">Комментировать <span class="post-panel__actions-num">2</span></span></div></a>
+									<a href="#!" class="post-panel__actions-item  post-panel__actions-item--share  js-share"><i class="icon icon-share-blue"></i></a>
+								</div>
+								
+								<div class="post-panel__hidden  js-hidden-panel">
+									<!-- comments -->
+									<div class="comments">
+										<!-- comment -->
+										<div class="comments__item">
+											<div class="post-head">
+												<a href="#!" class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></a>
+												<div class="post-head__userinfo">
+													<a href="#!" class="post-head__username">Пользователь#1</a>
+													<ul class="post-head__labels">
+														<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:32</li>
+													</ul>
+												</div>
+											</div>
+											<div class="comments__message">Аноним#4, можно ли курить на территории отеля?</div>
+										</div>
+										<div class="comments__item">
+											<div class="post-head">
+												<a href="#!" class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></a>
+												<div class="post-head__userinfo">
+													<a href="#!" class="post-head__username">Пользователь#2</a>
+													<ul class="post-head__labels">
+														<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:32</li>
+													</ul>
+												</div>
+											</div>
+											<div class="comments__message">Да, вполне.</div>
+										</div>
+									</div>
+									<!-- form -->
+									<div class="form-message  form-message--panel">
+										<div class="form-message__row">
+											<div class="form-message__userpic"><img src="images/user_anon_pic.png" alt=""></div>
+											<div class="form-message__field">
+												<textarea class="form-message__textarea" placeholder="Расскажите про отель"></textarea>
+												<a href="#!" class="form-message__add"><i class="icon icon-camera-lightblue"></i></a>
+											</div>
+											<button class="form-message__btn">Добавить</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="share">
+									<div class="share__row">
+										<a href="#!" class="share__item"><i class="icon icon-vk-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-fb-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-ok-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-tw-blue"></i></a>
+										<a href="#!" class="share__item  share__item--close  js-close-share"><i class="icon icon-close-blue"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__line"></div>
+			<div class="container">
+				<button class="footer__open  js-footer-show"></button>
+				<div class="footer__row">
+					<div class="footer__text  footer__text--label">© 2017 Hotel Inspector. Все права защищены.</div>
+					<div class="footer__links">
+						<a href="#!" class="footer__link">Что такое HotelsInspector</a>
+						<a href="#!" class="footer__link">Сотрудникам отелей</a>
+						<a href="#!" class="footer__link">Обратная связь</a>
+					</div>
+				</div>
+				<div class="footer__row">
+					<div class="footer__text  footer__text--label">Мобильное приложение</div>
+					<div class="footer__links  footer__links--full">
+						<a href="#!" class="footer__link  footer__link--icon"><img src="images/appstore.png" alt=""></a>
+						<a href="#!" class="footer__link  footer__link--icon"><img src="images/googleplay.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>

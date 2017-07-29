@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+	<meta charset="UTF-8">
+	<title>HotelsInspector</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<div class="container">
+				<a href="all.html" class="logo"><img src="images/logo.png" alt=""></a>
+		
+				<div class="search">
+					<div class="search__field">
+						<input type="text" class="search__input" placeholder="Поиск отеля и пользователей">
+						<button class="search__submit"><i class="icon icon-search-gray"></i></button>
+					</div>
+				</div>
+		
+				<div class="user">
+					<div class="user__panel">
+						<span class="user__item  user__messages">
+							<button class="user__btn"><i class="icon icon-cloud-gray"></i></button>
+						</span>
+						<span class="user__item  user__notification">
+							<button class="user__btn"><i class="icon icon-bell-gray"></i></button>
+						</span>
+						<span class="user__item"><a href="#!" class="user__pic"><img src="images/userpic.jpg" alt=""></a></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<nav class="menu">
+			<div class="container">
+				<ul class="menu__items">
+					<li><a href="#!" class="menu__link">Лента</a></li>
+					<li><a href="#!" class="menu__link  active">Отели</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main class="content">
+			<div class="container">
+				<aside class="content__aside  user-aside">
+					<div class="content__aside-item  user-aside__info">
+						<div class="user-aside__photo"><img src="images/userpic.jpg" alt=""></div>
+						<div class="user-aside__nickname">Пользователь#1</div>
+						<div class="user-aside__name">Константин Константинопольский</div>
+					</div>
+					<div class="content__aside-item  content__aside-item--menu">
+						<nav class="menu-aside">
+							<a href="cabinet_feed.html" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-list-blue"></i></span>
+								<span class="menu-aside__text"><div class="lighting-active"><span class="lighting__text">Лента</span></div></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-building-blue"></i></span>
+								<span class="menu-aside__text">Отели <span class="menu-aside__num">1</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-bookmark2-blue"></i></span>
+								<span class="menu-aside__text">Подписки <span class="menu-aside__num">3</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-user-blue"></i></span>
+								<span class="menu-aside__text">Подписчики <span class="menu-aside__num">8</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link  active">
+								<span class="menu-aside__icon"><i class="icon icon-cloud-blue"></i></span>
+								<span class="menu-aside__text"><div class="lighting-active"><span class="lighting__text">Диалоги <span class="menu-aside__num">2</span></span></div></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-camera-blue"></i></span>
+								<span class="menu-aside__text">Фотографии <span class="menu-aside__num">4</span></span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-filter-blue"></i></span>
+								<span class="menu-aside__text">Настройки</span>
+							</a>
+							<a href="#!" class="menu-aside__link">
+								<span class="menu-aside__icon"><i class="icon icon-exit-blue"></i></span>
+								<span class="menu-aside__text">Выйти</span>
+							</a>
+						</nav>
+					</div>
+					<div class="content__aside-item  user-aside__history">
+						<table class="user-aside__history-table">
+							<tr>
+								<td>Откуда</td>
+								<td><div class="user-aside__history-place">Москва</div></td>
+							</tr>
+							<tr>
+								<td>Был(а)</td>
+								<td>
+									<div class="user-aside__history-place">Alva Donna Exclusive Hotel & Spa 5*  <span>Турция</span></div>
+									<div class="user-aside__history-place">Alva Donna Exclusive Hotel & Spa 5*  <span>Турция</span></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="content__aside-item">
+						<div class="content__aside-subtitle">О себе</div>
+					</div>
+					<div class="content__aside-item">
+						<div class="content__aside-text">С детства меня интригуют, завораживают, притягивают новые места, вызывая страсть к путешествиям не только за границы нашей Родины, но и в пределах страны, где интересного ни чуть не меньше. Но где бы я не находилась, мне всегда интересно посмотреть не только на достопримечательности, но и на жизнь, традиции людей здесь, в этой точке планеты, общаясь с ними, наблюдая за ними со стороны. </div>
+					</div>
+				</aside>
+				<div class="content__column">
+					<div class="title">
+						<h1>Диалоги</h1>
+					</div>
+
+					<div class="dialogs">
+						<a href="#!" class="dialogs__item">
+							<div class="post-head">
+								<span class="post-head__userpic"><img src="images/userpic.jpg" alt=""></span>
+								<div class="post-head__userinfo">
+									<span class="post-head__username">Пользователь#2</span>
+									<div class="post-head__message">Ты не могла бы рассказать про отель?</div>
+								</div>
+								<div class="dialogs__time">
+									<i class="icon icon-clock-gray"></i>
+									<div class="dialogs__time-text">8 часов</div>
+								</div>
+							</div>
+						</a>
+						<a href="#!" class="dialogs__item">
+							<div class="post-head">
+								<span class="post-head__userpic"><img src="images/user_anon_pic.png" alt=""></span>
+								<div class="post-head__userinfo">
+									<span class="post-head__username">Пользователь#3</span>
+									<div class="post-head__message">Да, вполне.</div>
+								</div>
+								<div class="dialogs__time">
+									<i class="icon icon-calendar-gray"></i>
+									<div class="dialogs__time-text">24 сентября</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__line"></div>
+			<div class="container">
+				<button class="footer__open  js-footer-show"></button>
+				<div class="footer__row">
+					<div class="footer__text  footer__text--label">© 2017 Hotel Inspector. Все права защищены.</div>
+					<div class="footer__links">
+						<a href="#!" class="footer__link">Что такое HotelsInspector</a>
+						<a href="#!" class="footer__link">Сотрудникам отелей</a>
+						<a href="#!" class="footer__link">Обратная связь</a>
+					</div>
+				</div>
+				<div class="footer__row">
+					<div class="footer__text  footer__text--label">Мобильное приложение</div>
+					<div class="footer__links  footer__links--full">
+						<a href="#!" class="footer__link  footer__link--icon"><img src="images/appstore.png" alt=""></a>
+						<a href="#!" class="footer__link  footer__link--icon"><img src="images/googleplay.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+</html>

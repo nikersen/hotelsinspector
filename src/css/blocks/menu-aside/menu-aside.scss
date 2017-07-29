@@ -10,6 +10,46 @@
 		text-decoration: none;
 		color: inherit;
 		font-weight: 500;
+
+		&:hover, &.hover {
+			.icon-list-blue {@include sprite-position($icon-list-lightblue);}
+			.icon-building-blue {@include sprite-position($icon-building-lightblue);}
+			.icon-camera-blue {@include sprite-position($icon-camera-lightblue);}
+			.icon-cloud-blue {@include sprite-position($icon-cloud-lightblue);}
+			.icon-user-blue {@include sprite-position($icon-user-lightblue);}
+			.icon-bookmark2-blue {@include sprite-position($icon-bookmark2-lightblue);}
+			.icon-bookmark-blue {@include sprite-position($icon-bookmark-lightblue);}
+			.icon-filter-blue {@include sprite-position($icon-filter-lightblue);}
+			.icon-exit-blue {@include sprite-position($icon-exit-lightblue);}
+			.icon-user-subscribe-blue {@include sprite-position($icon-user-subscribe-lightblue);}
+		}
+
+		&.active {
+			.icon-list-blue {@include sprite-position($icon-list-cyan);}
+			.icon-building-blue {@include sprite-position($icon-building-cyan);}
+			.icon-camera-blue {@include sprite-position($icon-camera-cyan);}
+			.icon-cloud-blue {@include sprite-position($icon-cloud-cyan);}
+			.icon-user-blue {@include sprite-position($icon-user-cyan);}
+			.icon-bookmark2-blue {@include sprite-position($icon-bookmark2-cyan);}
+			.icon-bookmark-blue {@include sprite-position($icon-bookmark-cyan);}
+			.icon-filter-blue {@include sprite-position($icon-filter-cyan);}
+			.icon-user-subscribe-blue {@include sprite-position($icon-user-subscribe-cyan);}
+		}
+
+		&.disabled {
+			cursor: default;
+			color: #B4B4B6;
+
+			.icon-list-blue {@include sprite-position($icon-list-gray);}
+			.icon-building-blue {@include sprite-position($icon-building-gray);}
+			.icon-camera-blue {@include sprite-position($icon-camera-gray);}
+			.icon-cloud-blue {@include sprite-position($icon-cloud-gray);}
+			.icon-user-blue {@include sprite-position($icon-user-gray);}
+			.icon-bookmark2-blue {@include sprite-position($icon-bookmark2-gray);}
+			.icon-bookmark-blue {@include sprite-position($icon-bookmark-gray);}
+			.icon-filter-blue {@include sprite-position($icon-filter-gray);}
+			.icon-user-subscribe-blue {@include sprite-position($icon-user-subscribe-gray);}
+		}
 	}
 
 	&__icon {

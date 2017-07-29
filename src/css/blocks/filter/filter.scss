@@ -47,5 +47,10 @@
 				background: #EBEBEB;
 			}
 		}
+
+		&.disabled {
+			cursor: default;
+			color: #B4B4B6;
+		}
 	}
 }

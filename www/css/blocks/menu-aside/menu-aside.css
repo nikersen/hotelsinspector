@@ -12,6 +12,65 @@
   text-decoration: none;
   color: inherit;
   font-weight: 500; }
+  .menu-aside__link:hover .icon-list-blue, .menu-aside__link.hover .icon-list-blue {
+    background-position: 0px -192px; }
+  .menu-aside__link:hover .icon-building-blue, .menu-aside__link.hover .icon-building-blue {
+    background-position: -92px -25px; }
+  .menu-aside__link:hover .icon-camera-blue, .menu-aside__link.hover .icon-camera-blue {
+    background-position: -105px -230px; }
+  .menu-aside__link:hover .icon-cloud-blue, .menu-aside__link.hover .icon-cloud-blue {
+    background-position: -270px -68px; }
+  .menu-aside__link:hover .icon-user-blue, .menu-aside__link.hover .icon-user-blue {
+    background-position: -236px -111px; }
+  .menu-aside__link:hover .icon-bookmark2-blue, .menu-aside__link.hover .icon-bookmark2-blue {
+    background-position: -72px -109px; }
+  .menu-aside__link:hover .icon-bookmark-blue, .menu-aside__link.hover .icon-bookmark-blue {
+    background-position: -142px -150px; }
+  .menu-aside__link:hover .icon-filter-blue, .menu-aside__link.hover .icon-filter-blue {
+    background-position: -200px -265px; }
+  .menu-aside__link:hover .icon-exit-blue, .menu-aside__link.hover .icon-exit-blue {
+    background-position: -173px -192px; }
+  .menu-aside__link:hover .icon-user-subscribe-blue, .menu-aside__link.hover .icon-user-subscribe-blue {
+    background-position: -166px 0px; }
+  .menu-aside__link.active .icon-list-blue {
+    background-position: -39px -71px; }
+  .menu-aside__link.active .icon-building-blue {
+    background-position: -200px -114px; }
+  .menu-aside__link.active .icon-camera-blue {
+    background-position: -177px -230px; }
+  .menu-aside__link.active .icon-cloud-blue {
+    background-position: -270px -34px; }
+  .menu-aside__link.active .icon-user-blue {
+    background-position: -236px -74px; }
+  .menu-aside__link.active .icon-bookmark2-blue {
+    background-position: -34px -150px; }
+  .menu-aside__link.active .icon-bookmark-blue {
+    background-position: -70px -150px; }
+  .menu-aside__link.active .icon-filter-blue {
+    background-position: -234px -265px; }
+  .menu-aside__link.active .icon-user-subscribe-blue {
+    background-position: -166px -84px; }
+  .menu-aside__link.disabled {
+    cursor: default;
+    color: #B4B4B6; }
+    .menu-aside__link.disabled .icon-list-blue {
+      background-position: -73px -71px; }
+    .menu-aside__link.disabled .icon-building-blue {
+      background-position: -200px -150px; }
+    .menu-aside__link.disabled .icon-camera-blue {
+      background-position: -141px -230px; }
+    .menu-aside__link.disabled .icon-cloud-blue {
+      background-position: -270px 0px; }
+    .menu-aside__link.disabled .icon-user-blue {
+      background-position: -236px 0px; }
+    .menu-aside__link.disabled .icon-bookmark2-blue {
+      background-position: -200px 0px; }
+    .menu-aside__link.disabled .icon-bookmark-blue {
+      background-position: -106px -150px; }
+    .menu-aside__link.disabled .icon-filter-blue {
+      background-position: -166px -265px; }
+    .menu-aside__link.disabled .icon-user-subscribe-blue {
+      background-position: 0px -150px; }
 
 .menu-aside__icon {
   width: 26px;

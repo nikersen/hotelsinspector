@@ -1,0 +1,38 @@
+.dialogs {
+  padding-top: 23px; }
+  .dialogs__item {
+    display: block;
+    padding: 30px 0 16px;
+    border-top: 1px solid #E6E6EA; }
+    .dialogs__item:last-child {
+      border-bottom: 1px solid #E6E6EA; }
+  .dialogs .post-head__userinfo {
+    margin-right: 15px; }
+  .dialogs__time {
+    position: relative;
+    top: 4px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-left: auto;
+    width: 110px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+    .dialogs__time .icon {
+      margin-right: 10px;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto; }
+    .dialogs__time-text {
+      color: #B4B4B6; }

@@ -50,9 +50,24 @@
         border-bottom: 0; }
       .content__aside-item > .content__aside-subtitle {
         margin: -4px 0 -6px; }
+      .content__aside-item > .content__aside-text {
+        margin-top: -7px; }
+        .content__aside-item > .content__aside-text:last-child {
+          margin-bottom: 36px; }
     .content__aside-subtitle {
       font-size: 21px;
       font-weight: 600; }
+    .content__aside-text {
+      font-size: 15px;
+      line-height: 25px; }
+
+.title {
+  margin-bottom: 30px; }
+  .title:first-child {
+    margin-top: -3px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900; }
 
 .lighting {
   position: relative;

@@ -32,7 +32,7 @@
 
 	& + & {margin-top: 43px;}
 	
-	.post-head {
+	&-head {
 		display: flex;
 		align-items: flex-start;
 		margin-bottom: 20px;
@@ -44,6 +44,7 @@
 			overflow: hidden;
 			border-radius: 8px;
 			margin-right: 20px;
+			flex: 0 0 auto;
 
 			img {
 				width: 100%;
@@ -103,14 +104,34 @@
 			height: auto;
 		}
 
-		& + .post__text {margin-top: 20px;}
+		& + .post__text,
+		& + .post__reccomend {margin-top: 20px;}
 	}
 
 	&__text {
 		font-size: 15px;
 		line-height: 25px;
 
-		& + .post__img {margin-top: 20px;}
+		& + .post__img,
+		& + .post__reccomend {margin-top: 20px;}
+	}
+
+
+	&__reccomend {
+		display: flex;
+		align-items: center;
+
+		.icon {margin-right: 18px;}
+
+		&-text {
+			position: relative;
+			top: 4px;
+			font-size: 22px;
+			font-weight: 600;
+		}
+
+		& + .post__img,
+		& + .post__text {margin-top: 20px;}
 	}
 
 }

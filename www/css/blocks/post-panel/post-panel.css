@@ -1,4 +1,5 @@
 .post-panel {
+  position: relative;
   background: #F9FAFC;
   border: 1px solid #E6E6EA;
   border-radius: 8px; }
@@ -34,9 +35,9 @@
                 flex: 0 0 auto;
         margin-left: auto; }
       .post-panel__actions-item.active .icon-cloud-min-blue {
-        background-position: -135px -350px; }
-      .post-panel__actions-item.active .icon-heart-blue {
         background-position: -27px -350px; }
+      .post-panel__actions-item.active .icon-heart-blue {
+        background-position: -108px -350px; }
     .post-panel__actions-num {
       color: #B4B4B6;
       margin-left: 3px; }
