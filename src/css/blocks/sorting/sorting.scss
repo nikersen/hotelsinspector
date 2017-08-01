@@ -28,7 +28,7 @@
 			transform: translate(-50%, -50%);
 			border: 1px solid #DCDCE0;
 			box-sizing: border-box;
-			transition: width .1s ease, height .1s ease;
+			transition: width .1s ease, height .1s ease, border-radius .1s ease-out;
 			touch-action: none;
 		}
 

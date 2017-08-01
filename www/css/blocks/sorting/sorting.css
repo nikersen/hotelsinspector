@@ -42,8 +42,8 @@
       border: 1px solid #DCDCE0;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
-      -webkit-transition: width .1s ease, height .1s ease;
-              transition: width .1s ease, height .1s ease;
+      -webkit-transition: width .1s ease, height .1s ease, border-radius .1s ease-out;
+              transition: width .1s ease, height .1s ease, border-radius .1s ease-out;
       -ms-touch-action: none;
           touch-action: none; }
     .sorting__item + .sorting__item:after {

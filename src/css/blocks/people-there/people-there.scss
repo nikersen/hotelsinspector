@@ -1,0 +1,25 @@
+@import '../../vendor/_variables';
+
+.people-there {
+	padding-top: 23px;
+
+	&__item {
+		border-top: 1px solid $lightGray;
+		padding-top: 30px;
+		padding-bottom: 11px;
+
+		&:last-child {border-bottom: 1px solid $lightGray;}
+	}
+
+	.post-head {margin-bottom: 0;}
+	.post-head__userinfo {margin-right: 15px;}
+
+	&__panel {
+		flex: 0 0 135px;
+		position: relative;
+		top: -9px;
+		align-self: center;
+		margin-left: auto;
+	}
+
+}

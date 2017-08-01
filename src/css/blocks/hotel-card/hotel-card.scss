@@ -1,0 +1,6 @@
+@import '../../vendor/_variables';
+
+.hotel-card {
+
+	& + & {margin-top: 43px;}
+}

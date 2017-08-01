@@ -1,0 +1,23 @@
+.people-there {
+  padding-top: 23px; }
+  .people-there__item {
+    border-top: 1px solid #E6E6EA;
+    padding-top: 30px;
+    padding-bottom: 11px; }
+    .people-there__item:last-child {
+      border-bottom: 1px solid #E6E6EA; }
+  .people-there .post-head {
+    margin-bottom: 0; }
+  .people-there .post-head__userinfo {
+    margin-right: 15px; }
+  .people-there__panel {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 135px;
+        -ms-flex: 0 0 135px;
+            flex: 0 0 135px;
+    position: relative;
+    top: -9px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    margin-left: auto; }
