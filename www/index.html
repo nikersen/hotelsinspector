@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>HotelsInspector</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,28 +11,28 @@
 		<header class="header">
 			<div class="container">
 				<a href="all.html" class="logo"><img src="images/logo.png" alt=""></a>
-		
+
 				<div class="search">
 					<div class="search__field">
-						<input type="text" class="search__input" placeholder="Поиск отеля и пользователей">
-						<button class="search__submit"><i class="icon icon-search-gray"></i></button>
+						<input type="text" class="search__input  js-show-suggest" placeholder="Поиск отеля и пользователей">
+						<button class="search__submit  js-show-suggest"><i class="icon icon-search-gray"></i></button>
 					</div>
 				</div>
-		
+
 				<div class="user">
 					<div class="user__panel">
 						<span class="user__item  user__messages">
-							<button class="user__btn"><i class="icon icon-cloud-gray"></i></button>
+							<button class="user__btn  disabled"><i class="icon icon-cloud-gray"></i></button>
 						</span>
 						<span class="user__item  user__notification">
-							<button class="user__btn"><i class="icon icon-bell-gray"></i></button>
+							<button class="user__btn  disabled"><i class="icon icon-bell-gray"></i></button>
 						</span>
-						<span class="user__item"><a href="#!" class="user__pic"><img src="images/userpic.jpg" alt=""></a></span>
+						<span class="user__item"><a href="#!" class="user__pic"><i class="icon icon-user-gray"></i></a></span>
 					</div>
 				</div>
 			</div>
 		</header>
-		
+
 		<nav class="menu">
 			<div class="container">
 				<ul class="menu__items">

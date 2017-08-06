@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>HotelsInspector</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,6 +22,49 @@
 			<div class="container">
 				<aside class="content__aside  filter-aside">
 					<div class="title"><h1>Подобрать отель</h1></div>
+					<div class="filter-aside__item">
+						<div class="filter-aside__subtitle">Где</div>
+						<div class="filter-aside__form">
+							<div class="filter-aside__form-item">
+								<div class="filter-aside__form-field">
+									<input type="text" class="filter-aside__form-input" placeholder="Страна">
+									<span class="filter-aside__form-trigger"><i class="icon icon-burger-blue"></i></span>
+								</div>
+							</div>
+							<div class="filter-aside__form-item">
+								<div class="filter-aside__form-field">
+									<input type="text" class="filter-aside__form-input" placeholder="Город">
+									<span class="filter-aside__form-trigger"><i class="icon icon-burger-blue"></i></span>
+								</div>
+							</div>
+							<div class="filter-aside__form-item">
+								<div class="filter-aside__form-field">
+									<input type="text" class="filter-aside__form-input" placeholder="Отель">
+									<span class="filter-aside__form-trigger"><i class="icon icon-burger-blue"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="filter-aside__item">
+						<div class="filter-aside__subtitle">Количество звёзд</div>
+						<div class="filter-aside__stars star3">
+							<div class="filter-aside__star" data-mark="1"><i class="icon icon-star-blue"></i></div>
+							<div class="filter-aside__star" data-mark="2"><i class="icon icon-star-blue"></i></div>
+							<div class="filter-aside__star" data-mark="3"><i class="icon icon-star-blue"></i></div>
+							<div class="filter-aside__star" data-mark="4"><i class="icon icon-star-blue"></i></div>
+							<div class="filter-aside__star" data-mark="5"><i class="icon icon-star-blue"></i></div>
+							<input type="hidden" name="filter-aside__stars" id="selected_mark" value="2">
+						</div>
+					</div>
+					<div class="filter-aside__item">
+						<div class="filter-aside__subtitle">Рейтинг</div>
+						<div class="filter-aside__slider">
+							<input type="text" id="filter-rating-slider">
+						</div>
+					</div>
+					<div class="filter-aside__item">
+						<button class="filter-aside__btn">Показать</button>
+					</div>
 				</aside>
 				<div class="content__column">
 					<div class="sorting">

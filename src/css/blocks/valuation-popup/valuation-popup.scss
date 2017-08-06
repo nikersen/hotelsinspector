@@ -1,0 +1,218 @@
+@import '../../vendor/_variables';
+
+.val-popup {
+
+	background: #fff;
+	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 0 60px;
+
+	&__head {
+		position: relative;
+		padding-top: 33px;
+		padding-bottom: 33px;
+	}
+
+	&__close {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+
+	.title {
+		margin-bottom: 5px;
+	}
+
+	&__desc {
+		color: $baseGray;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 20px 0;
+		border-top: 1px solid $lightGray;
+
+		&:last-child {border-bottom: 1px solid $lightGray;}
+
+		&.error {
+			.val-popup__message {display: block;}
+		}
+	}
+
+	&__name-wrap {
+		position: relative;
+	}
+
+	&__message {
+		display: none;
+		position: absolute;
+		bottom: -20px;
+		white-space: nowrap;
+		color: #E94E1B;
+	}
+
+	&__name {
+		font-size: 16px;
+	}
+
+	&__val {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		font-size: 16px;
+
+		&-item:not(.val-popup__val-item--not) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 45px;
+			height: 45px;
+			border: 2px solid $baseBlue;
+			border-radius: 8px;
+			margin-right: 10px;
+			cursor: pointer;
+			transition: background .1s, color .1s, border-color .1s;
+			user-select: none;
+
+			&:nth-child(2) {&:hover {background: #E94E1B; border-color: #E94E1B; color: #fff;} &:active, &.active {background: $baseCyan; border-color: $baseCyan; color: #fff;}}
+			&:nth-child(3) {&:hover {background: #F39200; border-color: #F39200; color: #fff;} &:active, &.active {background: $baseCyan; border-color: $baseCyan; color: #fff;}}
+			&:nth-child(4) {&:hover {background: #E8DF2E; border-color: #E8DF2E; color: #fff;} &:active, &.active {background: $baseCyan; border-color: $baseCyan; color: #fff;}}
+			&:nth-child(5) {&:hover {background: #95C11F; border-color: #95C11F; color: #fff;} &:active, &.active {background: $baseCyan; border-color: $baseCyan; color: #fff;}}
+			&:nth-child(6) {&:hover {background: #3AAA35; border-color: #3AAA35; color: #fff;} &:active, &.active {background: $baseCyan; border-color: $baseCyan; color: #fff;}}
+			&:nth-child(7) {&:hover {background: #008D36; border-color: #008D36; color: #fff;} &:active, &.active {background: $baseCyan; border-color: $baseCyan; color: #fff;}}
+
+			&:last-child {margin-right: 0;}
+		}
+
+		&-item--not {
+			margin-right: 22px;
+			cursor: pointer;
+			color: $baseBlue;
+			user-select: none;
+
+			&:hover {
+				color: $baseCyan;
+			}
+
+			&:active, &.active {
+				color: $baseCyan;
+			}
+		}
+	}
+	
+	&__bot {
+		display: flex;
+		margin: 0 -60px;
+		border-top: 1px solid $lightGray;
+		padding: 38px 60px;
+		background: #F9FAFC;
+
+		.btn {
+			margin-left: auto;
+		}
+	}
+
+	@media(max-width: 900px) {
+		padding: 0 20px;
+
+		&__head {
+			padding-right: 40px;
+		}
+
+		&__item {
+			display: block;
+		}
+		
+		&__name-wrap {margin-bottom: 20px;}
+
+		&__message {
+			margin-top: 10px;
+			position: relative;
+			top: 0;
+			bottom: 0;
+		}
+
+		&__val {
+
+			&-item {
+				flex: 1 1 auto;
+			}
+		}
+	}
+}
+
+// form
+.val-popup__form {
+	padding-top: 33px;
+	padding-bottom: 37px;
+
+	&-title {
+		font-size: 21px;
+		font-weight: 600;
+		margin-bottom: 24px;
+	}
+
+	&-row {
+		display: flex;
+		width: 340px;
+	}
+
+	&-item {
+		width: 50%;
+		border: 1px solid $lightGray;
+
+		& + & {border-left: none;}
+
+		&:first-child {
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+		}
+
+		&:last-child {
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+		}
+	}
+
+	&-field {
+		display: flex;
+		align-items: center;
+		height: 48px;
+		padding-right: 15px;
+	}
+
+	&-input {
+		display: flex;
+		height: 100%;
+		border: none;
+		padding: 0;
+		background: transparent;
+		flex: 1 0 auto;
+		width: 1%;
+		margin-right: 15px;
+		padding-left: 25px;
+	}
+
+	&-trigger {
+		margin-left: auto;
+		background: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+
+		i {vertical-align: middle;}
+	}
+
+	@media(max-width: 600px) {
+
+		&-row {
+			width: 100%;
+		}
+	}
+}

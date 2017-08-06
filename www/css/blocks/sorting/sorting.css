@@ -47,7 +47,7 @@
       -ms-touch-action: none;
           touch-action: none; }
     .sorting__item + .sorting__item:after {
-      border-left: 0; }
+      border-left-width: 0; }
     .sorting__item:last-child:after {
       border-top-right-radius: 8px;
       border-bottom-right-radius: 8px; }
@@ -70,3 +70,27 @@
     font-size: 16px;
     -ms-touch-action: none;
         touch-action: none; }
+  @media (max-width: 600px) {
+    .sorting {
+      display: block;
+      padding: 0 30px; }
+      .sorting__item {
+        height: 55px; }
+        .sorting__item:after {
+          border-radius: 0; }
+        .sorting__item + .sorting__item:after {
+          border-left-width: 1px;
+          border-top-width: 0; }
+        .sorting__item:last-child:after {
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border-top-right-radius: 0px; }
+        .sorting__item:first-child:after {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          border-bottom-left-radius: 0px; }
+        .sorting__item.active {
+          margin: 5px 0; }
+          .sorting__item.active:after {
+            border-radius: 8px;
+            border-top-width: 2px; } }

@@ -97,6 +97,10 @@
     .hotel-aside__peoples-pic + .hotel-aside__peoples-pic {
       margin-left: 5px; }
 
+@media (max-width: 600px) {
+  .hotel-aside__photo {
+    border-radius: 0; } }
+
 .hotel-aside--hotel-card .hotel-aside__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -153,3 +157,11 @@
           flex: 0 0 100%; }
   .hotel-aside--hotel-card .hotel-aside__rating-item {
     min-width: 133px; }
+
+@media (max-width: 860px) {
+  .hotel-aside--hotel-card .hotel-aside__row {
+    display: block; }
+  .hotel-aside--hotel-card .hotel-aside__photo {
+    height: 130px;
+    width: 100%;
+    margin-bottom: 20px; } }

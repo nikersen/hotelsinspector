@@ -46,4 +46,10 @@
 			.icon-close-blue {@include sprite-position($icon-close-cyan);}
 		}
 	}
+
+	@media(max-width: 600px) {
+		height: 98px;
+		padding-bottom: 26px;
+		border-radius: 0;
+	}
 }

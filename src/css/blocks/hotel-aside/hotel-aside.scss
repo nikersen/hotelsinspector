@@ -109,6 +109,13 @@
 			& + & {margin-left: 5px;}
 		}
 	}
+
+	@media(max-width: 600px) {
+
+		&__photo {
+			border-radius: 0;
+		}
+	}
 }
 
 
@@ -178,6 +185,18 @@
 
 			&-item {
 				min-width: 133px;
+			}
+		}
+
+		@media(max-width: 860px) {
+			&__row {
+				display: block;
+			}
+
+			&__photo {
+				height: 130px;
+				width: 100%;
+				margin-bottom: 20px;
 			}
 		}
 	}

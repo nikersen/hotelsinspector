@@ -24,6 +24,7 @@
 			display: inline-block;
 			color: inherit;
 			margin-right: 55px;
+			white-space: nowrap;
 			
 			.icon {margin-right: 5px;}
 
@@ -61,5 +62,41 @@
 
 	.comments {
 		border-radius: 8px;
+	}
+
+	@media(max-width: 860px) {
+		&__actions {
+
+			&-item {
+				font-size: 14px;
+			}
+		}
+	}
+
+	@media(max-width: 600px) {
+		margin-left: -20px;
+		margin-right: -20px;
+			
+		&__actions {
+			position: relative;
+			display: block;
+			height: auto;
+			padding: 20px;
+			border-radius: 0;
+
+			&-item {
+				display: block;
+				font-size: 16px;
+
+				& + &:not(&--share) {margin-top: 20px;}
+
+				&--share {
+					margin-top: 0;
+					position: absolute;
+					top: 20px;
+					right: 20px;
+				}
+			}
+		}
 	}
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>HotelsInspector</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,18 +14,18 @@
 		
 				<div class="search">
 					<div class="search__field">
-						<input type="text" class="search__input" placeholder="Поиск отеля и пользователей">
-						<button class="search__submit"><i class="icon icon-search-gray"></i></button>
+						<input type="text" class="search__input  js-show-suggest" placeholder="Поиск отеля и пользователей">
+						<button class="search__submit  js-show-suggest"><i class="icon icon-search-gray"></i></button>
 					</div>
 				</div>
 		
 				<div class="user">
 					<div class="user__panel">
-						<span class="user__item  user__messages">
-							<button class="user__btn"><i class="icon icon-cloud-gray"></i></button>
+						<span class="user__item  user__messages  user__item--notice-on">
+							<button class="user__btn"><span class="user__notice"><span>2</span></span><i class="icon icon-cloud-gray"></i></button>
 						</span>
-						<span class="user__item  user__notification">
-							<button class="user__btn"><i class="icon icon-bell-gray"></i></button>
+						<span class="user__item  user__notification  user__item--notice-on">
+							<button class="user__btn"><span class="user__notice"><span>6</span></span><i class="icon icon-bell-gray"></i></button>
 						</span>
 						<span class="user__item"><a href="#!" class="user__pic"><img src="images/userpic.jpg" alt=""></a></span>
 					</div>
@@ -156,7 +157,7 @@
 									</a>
 								</div>
 							</div>
-							<button class="post-add__btn">
+							<button class="post-add__btn  js-popup-valuation">
 								<i class="icon icon-stats-blue"></i>
 								<span class="post-add__btn-text">Добавить оценку</span>
 							</button>
@@ -682,6 +683,240 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="overlay" class="val-popup-container">
+			<div class="container">
+				<div class="val-popup">
+					<div class="val-popup__head">
+						<div class="title"><h1>Оставить оценку</h1></div>
+						<div class="val-popup__desc">об отеле Alva Donna Exclusive Hotel & Spa 5* (Турция, Белек)</div>
+						<button class="val-popup__close  js-popup-hide"><i class="icon icon-close-blue"></i></button>
+					</div>
+					<div class="val-popup__body">
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Сервис</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Размещение</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item  error">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Питание</div>
+								<div class="val-popup__message">Необходимо поставить оценку</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Работа ресепшен</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Вежливый персонал</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Анимация</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Рестораны и бары</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Благоустройство территории</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Безопасность в отеле</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Питание</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+						<div class="val-popup__item">
+							<div class="val-popup__name-wrap">
+								<div class="val-popup__name">Питание</div>
+							</div>
+							<div class="val-popup__val">
+								<div class="val-popup__val-item  val-popup__val-item--not"><div class="lighting-active"><span class="lighting__text">Не знаю</span></div></div>
+								<div class="val-popup__val-item">1</div>
+								<div class="val-popup__val-item">2</div>
+								<div class="val-popup__val-item">3</div>
+								<div class="val-popup__val-item">4</div>
+								<div class="val-popup__val-item">5</div>
+								<div class="val-popup__val-item">5+</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="val-popup__form">
+						<div class="val-popup__form-title">Когда вы здесь были?</div>
+						<div class="val-popup__form-row">
+							<div class="val-popup__form-item">
+								<div class="val-popup__form-field">
+									<input type="text" class="val-popup__form-input" readonly placeholder="Месяц">
+									<button class="val-popup__form-trigger"><i class="icon icon-arrow-min-down-blue"></i></button>
+								</div>
+								<div class="val-popup__form-modal"></div>
+							</div>
+							<div class="val-popup__form-item">
+								<div class="val-popup__form-field">
+									<input type="text" class="val-popup__form-input" readonly placeholder="Год">
+									<button class="val-popup__form-trigger"><i class="icon icon-arrow-min-down-blue"></i></button>
+								</div>
+								<div class="val-popup__form-modal"></div>
+							</div>
+						</div>
+					</div>
+		
+					<div class="val-popup__bot">
+						<a href="#!" class="btn  js-popup-hide">Добавить оценку</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="suggest">
+			<div class="suggest__wrapper">
+				<div class="container">
+					<div class="suggest__group">
+						<div class="suggest__group-name">Отели</div>
+						<div class="suggest__results">
+							<a href="#!" class="suggest__result">
+								<div class="suggest__result-name"><span class="suggest__result-selection">По</span>беда #1, отель 3*</div>
+								<div class="suggest__result-place">Россия, Астрахань</div>
+							</a>
+							<a href="#!" class="suggest__result">
+								<div class="suggest__result-name"><span class="suggest__result-selection">Lorem</span> ipsum dolor sit amet, consectetur adipisicing</div>
+								<div class="suggest__result-place">Россия, Астрахань</div>
+							</a>
+							<a href="#!" class="suggest__result">
+								<div class="suggest__result-name"><span class="suggest__result-selection">По</span>беда #1, отель 3*</div>
+								<div class="suggest__result-place">Россия, Астрахань</div>
+							</a>
+						</div>
+					</div>
+					<div class="suggest__group">
+						<div class="suggest__group-name">Люди</div>
+						<div class="suggest__results">
+							<a href="#!" class="suggest__result">
+								<div class="suggest__result-name"><span class="suggest__result-selection">По</span>льзователь#2</div>
+								<div class="suggest__result-place">Россия, Москва</div>
+							</a>
+							<a href="#!" class="suggest__result">
+								<div class="suggest__result-name"><span class="suggest__result-selection">По</span>льзователь#27</div>
+								<div class="suggest__result-place">Россия, Астрахань</div>
+							</a>
+							<a href="#!" class="suggest__result">
+								<div class="suggest__result-name"><span class="suggest__result-selection">По</span>льзователь#4</div>
+								<div class="suggest__result-place">Россия, Астрахань</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="js/app.js"></script>

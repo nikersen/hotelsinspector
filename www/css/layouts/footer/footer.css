@@ -84,3 +84,6 @@
       margin-right: 20px; }
     .footer__link:last-child {
       margin-right: 0; }
+  @media (max-width: 600px) {
+    .footer {
+      display: none; } }

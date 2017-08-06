@@ -1,5 +1,11 @@
 @import '../vendor/_variables';
 
+body.overlay-on {
+	.page {
+		overflow: hidden;
+		height: 100%;
+	}
+}
 .page {
 	font-family: Proxima;
 	font-weight: 400;
@@ -17,6 +23,10 @@
 	max-width: 1000px;
 	padding: 0 20px;
 	margin: 0 auto;
+
+	@media(max-width: 600px) {
+
+	}
 }
 
 .content {
@@ -64,6 +74,37 @@
 		&-text {
 			font-size: 15px;
 			line-height: 25px;
+		}
+	}
+
+	@media(max-width: 800px) {
+
+		.container {
+			display: block;
+		}
+
+		&__column,
+		&__aside {
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+			
+			margin-bottom: 40px;
+
+			&:last-child {margin-bottom: 0;}
+		}
+	}
+
+	@media(max-width: 600px) {
+		margin-top: 0;
+		padding-bottom: 0;
+
+		.container {
+			padding: 0;
+
+			&__aside {
+				border-radius: 0;
+			}
 		}
 	}
 }
@@ -144,3 +185,44 @@ h1, h2, h3, h4, h5, h6 {font-weight: 900;}
 }
 
 .active .lighting-active {&:before {opacity: 1;}}
+
+
+// overlay and popups 
+#overlay {
+	display: flex;
+	visibility: hidden;
+	align-items: center;
+	jusify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(#000, .5);
+	z-index: 100;
+	overflow: auto;
+
+	&.show {visibility: visible;}
+	
+	.container {
+		width: 100%;
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		flex-shrink: 0;
+
+		&:after,
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			flex-basis: 60px;
+			flex-shrink: 0;
+		}
+	}
+
+}

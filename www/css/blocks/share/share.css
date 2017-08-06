@@ -31,20 +31,25 @@
     .share__item:hover .icon-vk-blue, .share__item.hover .icon-vk-blue {
       background-position: -270px -238px; }
     .share__item:hover .icon-ok-blue, .share__item.hover .icon-ok-blue {
-      background-position: -208px -192px; }
+      background-position: -364px -139px; }
     .share__item:hover .icon-fb-blue, .share__item.hover .icon-fb-blue {
-      background-position: -367px -158px; }
+      background-position: -144px -109px; }
     .share__item:hover .icon-tw-blue, .share__item.hover .icon-tw-blue {
-      background-position: -336px -120px; }
+      background-position: -364px 0px; }
     .share__item:hover .icon-close-blue, .share__item.hover .icon-close-blue {
-      background-position: -336px -62px; }
+      background-position: -332px -254px; }
     .share__item:active .icon-vk-blue, .share__item.active .icon-vk-blue {
-      background-position: -68px -325px; }
+      background-position: -127px -325px; }
     .share__item:active .icon-ok-blue, .share__item.active .icon-ok-blue {
-      background-position: -367px 0px; }
+      background-position: -364px -203px; }
     .share__item:active .icon-fb-blue, .share__item.active .icon-fb-blue {
-      background-position: -367px -189px; }
+      background-position: -208px -192px; }
     .share__item:active .icon-tw-blue, .share__item.active .icon-tw-blue {
-      background-position: -336px -93px; }
+      background-position: -364px -54px; }
     .share__item:active .icon-close-blue, .share__item.active .icon-close-blue {
-      background-position: -336px 0px; }
+      background-position: 0px -325px; }
+  @media (max-width: 600px) {
+    .share {
+      height: 98px;
+      padding-bottom: 26px;
+      border-radius: 0; } }

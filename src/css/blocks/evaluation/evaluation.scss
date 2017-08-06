@@ -56,6 +56,12 @@
 			.evaluation__rate-line {background: #E94E1B;}
 		}
 	}
+
+	@media(max-width: 600px) {
+		&__item {
+			width: 100%;
+		}
+	}
 }
 
 .evaluation--post {

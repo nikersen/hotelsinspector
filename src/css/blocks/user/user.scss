@@ -19,6 +19,15 @@
 		height: 50px;
 		border-radius: 8px;
 		overflow: hidden;
+		text-align: center;
+		line-height: 50px;
+
+		.icon {
+			vertical-align: middle;
+		}
+
+		&:hover, &.hover,
+		&:active, &.active {.icon-user-gray {@include sprite-position($icon-user-cyan);}}
 
 		img {
 			vertical-align: top;
@@ -28,17 +37,67 @@
 	}
 
 	&__btn {
+		position: relative;
 		background: transparent;
 		border: none;
 		cursor: pointer;
 		width: auto;
 		padding: 0;
+
+		&.disabled {cursor: default;}
+	}
+
+	&__notice {
+		display: none;
+		position: absolute;
+		top: -10px;
+		right: 2px;
+		z-index: 1;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+		border: 2px solid $deepBlue;
+		border-radius: 10px;
+		max-width: 40px;
+		min-width: 22px;
+		height: 22px;
+		padding: 0 4px;
+		transform: translateX(50%);
+		font-size: 15px;
+		font-weight: 600;
+
+		span {
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 
 	&__item {
 		margin-left: 30px;
 
 		&:first-child {margin-left: 0;}
+
+		&--notice-on {
+			.user__notice {
+				display: flex;
+			}
+
+			.user__btn {
+				.icon-bell-gray {@include sprite-position($icon-bell-blue);}
+				.icon-cloud-gray {@include sprite-position($icon-cloud-blue);}
+
+				&:hover, &.hover,
+				&:active, &.active {
+
+					.icon-bell-gray {@include sprite-position($icon-bell-cyan);}
+					.icon-cloud-gray {@include sprite-position($icon-cloud-cyan);}
+
+					.user__notice {border-color: $baseCyan;}
+				}
+			}
+		}
 	}
 
 	&__messages {

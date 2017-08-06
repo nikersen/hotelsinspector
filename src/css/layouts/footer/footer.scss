@@ -93,4 +93,8 @@
 		&:last-child {margin-right: 0;}
 
 	}
+
+	@media(max-width: 600px) {
+		display: none;
+	}
 }

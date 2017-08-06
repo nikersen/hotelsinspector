@@ -16,7 +16,11 @@
     height: 50px;
     border-radius: 8px;
     overflow: hidden;
-    margin-right: 20px; }
+    margin-right: 20px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
     .form-message__userpic img {
       width: 100%;
       height: auto; }
@@ -50,7 +54,9 @@
     line-height: 18px;
     outline: none;
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    -webkit-transition: height .2s;
+            transition: height .2s; }
     .form-message__textarea.active {
       height: 120px; }
     .form-message__textarea::-webkit-input-placeholder {
@@ -126,6 +132,24 @@
       cursor: pointer;
       border: none;
       background: transparent; }
+  @media (max-width: 600px) {
+    .form-message {
+      border-radius: 0; }
+      .form-message__row {
+        position: relative;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+      .form-message__userpic {
+        position: absolute;
+        bottom: 20px;
+        left: 20px; }
+      .form-message__field {
+        width: 100%;
+        margin-right: 0; }
+      .form-message__btn {
+        margin-left: auto;
+        margin-top: 20px; } }
 
 .form-message--post-add {
   border: none;

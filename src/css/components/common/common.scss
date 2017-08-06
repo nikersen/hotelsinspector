@@ -1,0 +1,28 @@
+@import '../../vendor/_variables';
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 58px;
+	border: 2px solid $baseBlue;
+	border-radius: 8px;
+	font-size: 16px;
+	background: transparent;
+	cursor: pointer;
+	color: inherit;
+	outline: none;
+	padding: 0 14px;
+	width: auto;
+
+	&:hover, &.hover {
+		border-color: $baseCyan;
+		color: $baseCyan;
+	}
+
+	&:active, &.active {
+		border-color: $baseCyan;
+		background: $baseCyan;
+		color: #fff;
+	}
+}

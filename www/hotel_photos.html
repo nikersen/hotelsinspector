@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 	<title>HotelsInspector</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,18 +14,18 @@
 		
 				<div class="search">
 					<div class="search__field">
-						<input type="text" class="search__input" placeholder="Поиск отеля и пользователей">
-						<button class="search__submit"><i class="icon icon-search-gray"></i></button>
+						<input type="text" class="search__input  js-show-suggest" placeholder="Поиск отеля и пользователей">
+						<button class="search__submit  js-show-suggest"><i class="icon icon-search-gray"></i></button>
 					</div>
 				</div>
 		
 				<div class="user">
 					<div class="user__panel">
-						<span class="user__item  user__messages">
-							<button class="user__btn"><i class="icon icon-cloud-gray"></i></button>
+						<span class="user__item  user__messages  user__item--notice-on">
+							<button class="user__btn"><span class="user__notice"><span>2</span></span><i class="icon icon-cloud-gray"></i></button>
 						</span>
-						<span class="user__item  user__notification">
-							<button class="user__btn"><i class="icon icon-bell-gray"></i></button>
+						<span class="user__item  user__notification  user__item--notice-on">
+							<button class="user__btn"><span class="user__notice"><span>6</span></span><i class="icon icon-bell-gray"></i></button>
 						</span>
 						<span class="user__item"><a href="#!" class="user__pic"><img src="images/userpic.jpg" alt=""></a></span>
 					</div>
@@ -142,7 +143,7 @@
 					</div>
 					
 					<div class="photos">
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -152,7 +153,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo_2.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -162,7 +163,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo_2.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -172,7 +173,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -182,7 +183,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -192,7 +193,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo_2.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -202,7 +203,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo_2.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -212,7 +213,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="photos__item">
+						<div class="photos__item  js-open-photo-popup">
 							<div class="photos__item-img" style="background-image: url(images/hotel_photo.jpg)"></div>
 							<div class="photos__details">
 								<a href="#!" class="photos__username">Пользователь#4</a>
@@ -248,6 +249,96 @@
 				</div>
 			</div>
 		</footer>
+
+		<div id="overlay" class="photo-popup-container">
+			<div class="container">
+				<div class="photo-popup">
+					<div class="photo-popup__img">
+						<img src="images/pexels-photo.jpg" alt="">
+		
+						<div class="photo-popup__img-arrow  photo-popup__img-arrow--prev"><i class="icon icon-arrow-left-white"></i></div>
+						<div class="photo-popup__img-arrow  photo-popup__img-arrow--next"><i class="icon icon-arrow-right-white"></i></div>
+						<div class="photo-popup__img-count">3 из 8</div>
+					</div>
+					<div class="photo-popup__info">
+						<div class="photo-popup__info-item">
+							<div class="post-head">
+								<a href="#!" class="post-head__userpic"><img src="images/userpic.jpg" alt=""></a>
+								<div class="post-head__userinfo">
+									<a href="#!" class="post-head__username">Пользователь#2</a>
+									<div class="post-head__message">про <a href="#!">Alva Donna Exclusive Hotel & Spa 5*</a> (Турция, Белек)</div>
+									<ul class="post-head__labels">
+										<li class="post-head__labels-item  post-head__labels-item--time"><i class="icon icon-clock-gray"></i> 8 часов 18 минут</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="photo-popup__info-item">
+							<div class="photo-popup__desc">Без описания</div>
+						</div>
+						<div class="photo-popup__info-item">
+							<div class="post-panel">
+								<!-- actions -->
+								<div class="post-panel__actions">
+									<a href="#!" class="post-panel__actions-item"><i class="icon icon-heart-blue"></i> Like it  <span class="post-panel__actions-num">126</span></a>
+									<a href="#!" class="post-panel__actions-item  post-panel__actions-item--share  js-share"><i class="icon icon-share-blue"></i></a>
+								</div>
+		
+								<div class="share">
+									<div class="share__row">
+										<a href="#!" class="share__item"><i class="icon icon-vk-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-fb-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-ok-blue"></i></a>
+										<a href="#!" class="share__item"><i class="icon icon-tw-blue"></i></a>
+										<a href="#!" class="share__item  share__item--close  js-close-share"><i class="icon icon-close-blue"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="photo-popup__info-item  photo-popup__info-item--comments">
+							<!-- comments -->
+							<div class="comments">
+								<!-- comment -->
+								<div class="comments__item">
+									<div class="post-head">
+										<a href="#!" class="post-head__userpic"><img src="images/userpic.jpg" alt=""></a>
+										<div class="post-head__userinfo">
+											<a href="#!" class="post-head__username">Пользователь#1</a>
+											<ul class="post-head__labels">
+												<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:32</li>
+											</ul>
+										</div>
+									</div>
+									<div class="comments__message">Аноним#4, можно ли курить на территории отеля?</div>
+								</div>
+								<div class="comments__item">
+									<div class="post-head">
+										<a href="#!" class="post-head__userpic"><img src="images/userpic.jpg" alt=""></a>
+										<div class="post-head__userinfo">
+											<a href="#!" class="post-head__username">Пользователь#2</a>
+											<ul class="post-head__labels">
+												<li class="post-head__labels-item  post-head__labels-item--date"><i class="icon icon-calendar-gray"></i> 24 марта 2017, 20:32</li>
+											</ul>
+										</div>
+									</div>
+									<div class="comments__message">Да, вполне.</div>
+								</div>
+							</div>
+						</div>
+						<div class="photo-popup__info-item  photo-popup__info-item--form">
+							<!-- form -->
+							<div class="form-message">
+								<div class="form-message__row">
+									<div class="form-message__field">
+										<textarea class="form-message__textarea" placeholder="Написать комментарий"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="js/app.js"></script>

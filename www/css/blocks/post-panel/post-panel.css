@@ -24,7 +24,8 @@
       font-size: 16px;
       display: inline-block;
       color: inherit;
-      margin-right: 55px; }
+      margin-right: 55px;
+      white-space: nowrap; }
       .post-panel__actions-item .icon {
         margin-right: 5px; }
       .post-panel__actions-item--share {
@@ -35,9 +36,9 @@
                 flex: 0 0 auto;
         margin-left: auto; }
       .post-panel__actions-item.active .icon-cloud-min-blue {
-        background-position: -27px -350px; }
+        background-position: -304px -215px; }
       .post-panel__actions-item.active .icon-heart-blue {
-        background-position: -108px -350px; }
+        background-position: -304px -107px; }
     .post-panel__actions-num {
       color: #B4B4B6;
       margin-left: 3px; }
@@ -53,3 +54,26 @@
       border-top-right-radius: 0; }
   .post-panel .comments {
     border-radius: 8px; }
+  @media (max-width: 860px) {
+    .post-panel__actions-item {
+      font-size: 14px; } }
+  @media (max-width: 600px) {
+    .post-panel {
+      margin-left: -20px;
+      margin-right: -20px; }
+      .post-panel__actions {
+        position: relative;
+        display: block;
+        height: auto;
+        padding: 20px;
+        border-radius: 0; }
+        .post-panel__actions-item {
+          display: block;
+          font-size: 16px; }
+          .post-panel__actions-item + .post-panel__actions-item:not(.post-panel__actions-item--share) {
+            margin-top: 20px; }
+          .post-panel__actions-item--share {
+            margin-top: 0;
+            position: absolute;
+            top: 20px;
+            right: 20px; } }

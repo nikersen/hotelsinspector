@@ -1,3 +1,272 @@
 @import '../../vendor/_variables';
 
-.filter-aside {}
+.filter-aside {
+	padding-top: 35px;
+	padding-bottom: 17px;
+
+	&__item {
+		margin-bottom: 35px;
+
+		&:last-child {margin-bottom: 0;}
+	}
+
+	.title {margin-bottom: 28px;}
+
+	&__subtitle {
+		font-size: 21px;
+		font-weight: 600;
+		line-height: 25px;
+		margin-bottom: 14px;
+	}
+
+	&__form {
+
+		&-item {
+			margin-bottom: 10px;
+
+			&:last-child {margin-bottom: 0;}
+		}
+
+
+
+		&-field {
+			display: flex;
+			align-items: center;
+			height: 50px;
+			border-radius: 8px;
+			border: 1px solid $lightGray;
+			background: #fff;
+		}
+
+		&-input {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border: none;
+			border-radius: 8px;
+			background: transparent;
+			padding-left: 25px;
+			padding-right: 20px;
+			flex: 1 1 auto;
+
+			&::placeholder {color: $baseGray;}
+		}
+
+		&-trigger {
+			cursor: pointer;
+			margin-right: 20px;
+		}
+	}
+
+	&__stars {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -17px;
+
+		&.star5 {
+			.filter-aside__star:nth-child(5),
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+		}
+		&.star4 {
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+		&.star3 {
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+			
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+		&.star2 {
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+			
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+		&.star1 {
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+
+		&.mark5 {
+			.filter-aside__star:nth-child(5),
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+		}
+		&.mark4 {
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+		&.mark3 {
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+			
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+		&.mark2 {
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+			
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+		&.mark1 {
+			.filter-aside__star:nth-child(1) {.icon {@include sprite-position($icon-star-yellow);}}
+
+			.filter-aside__star:nth-child(2),
+			.filter-aside__star:nth-child(3),
+			.filter-aside__star:nth-child(4),
+			.filter-aside__star:nth-child(5) {.icon {@include sprite-position($icon-star-blue);}}
+		}
+	}
+
+	&__star {
+		cursor: pointer;
+		text-align: center;
+		width: 20%;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 100%;
+		width: 100%;
+		height: 58px;
+		border: 2px solid $baseBlue;
+		border-radius: 8px;
+		font-size: 16px;
+		background: #fff;
+		cursor: pointer;
+		color: inherit;
+		outline: none;
+		padding: 0 14px;
+
+		&:hover, &.hover {
+			border-color: $baseCyan;
+			color: $baseCyan;
+		}
+
+		&:active, &.active {
+			border-color: $baseCyan;
+			background: $baseCyan;
+			color: #fff;
+		}
+	}
+}
+
+
+// # Rating slider
+@import '../../vendor/ion.rangeSlider';
+.filter-aside__slider {
+	position: relative;
+	height: 91px;
+	padding: 0 10px;
+	-webkit-backface-visibility: hidden;
+	transform: translateZ(0);
+
+	.irs-from,
+	.irs-to {
+		position: absolute;
+		display: block;
+		top: -4px;
+		font-size: 21px;
+		font-weight: 600;
+		cursor: pointer;
+		text-align: center;
+		color: $baseBlue;
+		z-index: 101;
+
+		&:active, &.active,
+		&:hover, &.hover {
+			&:after {background: $baseBlue;}
+		}
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 28px;
+			left: 50%;
+			margin-left: -1px;
+			width: 3px;
+			height: 10px;
+			background: $baseBlue;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 38px;
+			left: 50%;
+			margin-left: -12px;
+			display: block;
+			background: #fff;
+			border: 1px solid $baseBlue;
+			width: 23px;
+			height: 23px;
+			border-radius: 50%;
+			transition: background .15s;
+		}
+	}
+
+	.irs-line {
+		position: absolute;
+		top: 20px;
+		left: 0;
+		width: 100%;
+		height: 70px;
+		z-index: 100;
+		cursor: pointer;
+	}
+	.irs-min,
+	.irs-max {display: none;}
+
+	.irs-grid {
+		top: 45px;
+		height: 3px;
+		background: $baseBlue;
+		
+		&-text {
+			bottom: auto;
+			top: 29px;
+			font-size: 17px;
+			color: $baseGray;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -33px;
+				left: 50%;
+				margin-left: -1px;
+				height: 11px;
+				width: 3px;
+				background: $baseBlue;
+			}
+		}
+		&-pol {display: none;}
+	}
+}

@@ -32,6 +32,9 @@
 button, input, textarea {
   font-family: inherit; }
 
+input::-ms-clear {
+  display: none; }
+
 ol, ul {
   margin: 0;
   padding: 0;
@@ -44,3 +47,6 @@ p, h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #36A9E1; }
+
+body {
+  overflow-y: scroll; }

@@ -1,0 +1,85 @@
+.suggest {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 81px;
+  width: 100%;
+  z-index: 100;
+  overflow-y: auto;
+  max-height: -webkit-calc(100vh - 81px);
+  max-height: calc(100vh - 81px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  border-bottom: 1px solid #E6E6EA; }
+  .suggest__wrapper {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .suggest .container {
+    position: relative;
+    width: 366px;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 0; }
+  .suggest__group {
+    position: relative;
+    margin-bottom: 37px; }
+    .suggest__group:last-child {
+      margin-bottom: 0; }
+    .suggest__group-name {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -100px;
+      padding-right: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 100px;
+      font-size: 20px;
+      font-weight: 600; }
+  .suggest__results {
+    border-left: 1px solid #E6E6EA;
+    padding-left: 20px; }
+  .suggest__result {
+    display: block;
+    margin-bottom: 20px; }
+    .suggest__result:hover .suggest__result-name {
+      color: #00CFFF; }
+    .suggest__result:last-child {
+      margin-bottom: 0; }
+    .suggest__result-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #5DBDE8;
+      margin-bottom: 4px; }
+    .suggest__result-place {
+      color: #B4B4B6; }
+    .suggest__result-selection {
+      background: #FFF0CA; }
+  @media (max-width: 800px) {
+    .suggest {
+      top: 129px;
+      max-height: 80vh; }
+      .suggest__wrapper {
+        display: block; }
+        .suggest__wrapper .container {
+          position: static;
+          width: 100%;
+          padding-left: 100px; } }

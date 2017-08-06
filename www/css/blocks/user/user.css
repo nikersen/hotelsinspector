@@ -28,21 +28,76 @@
     width: 50px;
     height: 50px;
     border-radius: 8px;
-    overflow: hidden; }
+    overflow: hidden;
+    text-align: center;
+    line-height: 50px; }
+    .user__pic .icon {
+      vertical-align: middle; }
+    .user__pic:hover .icon-user-gray, .user__pic.hover .icon-user-gray, .user__pic:active .icon-user-gray, .user__pic.active .icon-user-gray {
+      background-position: -236px -37px; }
     .user__pic img {
       vertical-align: top;
       width: 100%;
       height: auto; }
   .user__btn {
+    position: relative;
     background: transparent;
     border: none;
     cursor: pointer;
     width: auto;
     padding: 0; }
+    .user__btn.disabled {
+      cursor: default; }
+  .user__notice {
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    z-index: 1;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #fff;
+    border: 2px solid #269ED3;
+    border-radius: 10px;
+    max-width: 40px;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 4px;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    font-size: 15px;
+    font-weight: 600; }
+    .user__notice span {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .user__item {
     margin-left: 30px; }
     .user__item:first-child {
       margin-left: 0; }
+    .user__item--notice-on .user__notice {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+    .user__item--notice-on .user__btn .icon-bell-gray {
+      background-position: 0px -265px; }
+    .user__item--notice-on .user__btn .icon-cloud-gray {
+      background-position: -270px -136px; }
+    .user__item--notice-on .user__btn:hover .icon-bell-gray, .user__item--notice-on .user__btn.hover .icon-bell-gray, .user__item--notice-on .user__btn:active .icon-bell-gray, .user__item--notice-on .user__btn.active .icon-bell-gray {
+      background-position: -270px -204px; }
+    .user__item--notice-on .user__btn:hover .icon-cloud-gray, .user__item--notice-on .user__btn.hover .icon-cloud-gray, .user__item--notice-on .user__btn:active .icon-cloud-gray, .user__item--notice-on .user__btn.active .icon-cloud-gray {
+      background-position: -236px -182px; }
+    .user__item--notice-on .user__btn:hover .user__notice, .user__item--notice-on .user__btn.hover .user__notice, .user__item--notice-on .user__btn:active .user__notice, .user__item--notice-on .user__btn.active .user__notice {
+      border-color: #00CFFF; }
   .user__messages {
     position: relative;
     top: 1px; }

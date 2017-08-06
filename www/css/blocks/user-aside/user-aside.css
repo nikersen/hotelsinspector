@@ -52,3 +52,7 @@
       color: #B4B4B6; }
     .user-aside__history-place:last-child {
       margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .user-aside__nickname {
+    font-size: 22px; } }

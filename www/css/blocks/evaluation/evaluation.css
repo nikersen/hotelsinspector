@@ -51,6 +51,9 @@
       background: #F9AC9D; }
       .evaluation__rate.low .evaluation__rate-line {
         background: #E94E1B; }
+  @media (max-width: 600px) {
+    .evaluation__item {
+      width: 100%; } }
 
 .evaluation--post {
   margin-top: -10px; }

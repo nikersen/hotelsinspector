@@ -136,3 +136,21 @@
       font-size: 16px;
       -ms-touch-action: none;
           touch-action: none; }
+  @media (max-width: 600px) {
+    .pagination {
+      margin-bottom: 0; }
+      .pagination__row {
+        display: block; }
+      .pagination__pages {
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 30px; }
+        .pagination__pages-item {
+          -webkit-box-flex: 1;
+          -webkit-flex: 1 1 auto;
+              -ms-flex: 1 1 auto;
+                  flex: 1 1 auto; }
+          .pagination__pages-item.active:after {
+            width: 100%; }
+      .pagination__more {
+        border-radius: 0; } }

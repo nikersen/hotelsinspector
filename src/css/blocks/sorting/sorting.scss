@@ -32,7 +32,7 @@
 			touch-action: none;
 		}
 
-		& + & {&:after {border-left: 0;}}
+		& + & {&:after {border-left-width: 0;}}
 		&:last-child {&:after {
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
@@ -61,5 +61,41 @@
 		z-index: 2;
 		font-size: 16px;
 		touch-action: none;
+	}
+
+	@media(max-width: 600px) {
+		display: block;
+		padding: 0 30px;
+
+		&__item {
+			height: 55px;
+
+			&:after {
+				border-radius: 0;
+			}
+
+			& + & {&:after {border-left-width: 1px; border-top-width: 0;}}
+
+			&:last-child {&:after {
+				border-bottom-left-radius: 8px;
+				border-bottom-right-radius: 8px;
+				border-top-right-radius: 0px;
+			}}
+
+			&:first-child {&:after {
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				border-bottom-left-radius: 0px;
+			}}
+
+			&.active {
+				margin: 5px 0;
+
+				&:after {
+					border-radius: 8px;
+					border-top-width: 2px;
+				}
+			}
+		}
 	}
 }

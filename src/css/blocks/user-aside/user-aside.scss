@@ -73,4 +73,10 @@
 			&:last-child {margin-bottom: 0;}
 		}
 	}
+
+	@media(max-width: 900px) {
+		&__nickname {
+			font-size: 22px;
+		}
+	}
 }
